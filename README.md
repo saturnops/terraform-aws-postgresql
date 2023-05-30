@@ -9,10 +9,10 @@ This Terraform module deploys a PostgreSQL database on AWS RDS, simplifying the 
 ## Usage Examples
 ```hcl
 module "rds-pg" {
-  source                           = "https://github.com/sq-ia/terraform-aws-rds-postgresql.git"
+  source                           = "saturnops/postgresql-rds/aws"
   name                             = "skaf"
   db_name                          = "postgres"
-  vpc_id                           = "vpc-047eb87de44acfb73"
+  vpc_id                           = "vpc-047eb8acfb73"
   multi_az                         = "true"
   subnet_ids                       = ["subnet-b39cfc", "subnet-090b8d8"]
   environment                      = "prod"
@@ -25,13 +25,13 @@ module "rds-pg" {
   skip_final_snapshot              = true
   backup_window                    = "03:00-06:00"
   maintenance_window               = "Mon:00:00-Mon:03:00"
-  allowed_security_groups          = ["sg-013cb57dc3bc6f880"]
   major_engine_version             = "15.2"
   deletion_protection              = false
+  allowed_security_groups          = ["sg-013cbf880"]
   final_snapshot_identifier_prefix = "final"
 }
 ```
-Refer [examples](https://github.com/sq-ia/terraform-aws-rds-postgresql/tree/main/example/complete) for more details.
+Refer [examples](https://github.com/RohitSquareops/terraform-aws-rds-postgresql/tree/main/example/complete) for more details.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
