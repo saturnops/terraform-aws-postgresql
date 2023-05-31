@@ -10,8 +10,8 @@ This Terraform module deploys a PostgreSQL database on AWS RDS, simplifying the 
 ```hcl
 module "rds-pg" {
   source                           = "saturnops/postgresql-rds/aws"
-  name                             = "skaf"
-  db_name                          = "postgres"
+  name                             = "postgresql"
+  db_name                          = "proddb"
   vpc_id                           = "vpc-047eb8acfb73"
   multi_az                         = "true"
   subnet_ids                       = ["subnet-b39cfc", "subnet-090b8d8"]
@@ -31,7 +31,10 @@ module "rds-pg" {
   final_snapshot_identifier_prefix = "final"
 }
 ```
-Refer [examples](https://github.com/RohitSquareops/terraform-aws-rds-postgresql/tree/main/example/complete) for more details.
+Refer [examples](https://github.com/saturnops/terraform-aws-rds-postgresql/tree/main/example/complete) for more details.
+
+## IAM Permissions
+The required IAM permissions to create resources from this module can be found [here](https://github.com/saturnops/terraform-aws-rds-postgresql/blob/main/IAM.md)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
