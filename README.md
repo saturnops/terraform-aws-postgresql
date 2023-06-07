@@ -9,7 +9,7 @@ This Terraform module deploys a PostgreSQL database on AWS RDS, simplifying the 
 ## Usage Examples
 ```hcl
 module "rds-pg" {
-  source                           = "saturnops/postgresql-rds/aws"
+  source                           = "saturnops/rds-postgresql/aws"
   name                             = "postgresql"
   db_name                          = "proddb"
   vpc_id                           = "vpc-047eb8acfb73"

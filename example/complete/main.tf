@@ -17,7 +17,7 @@ locals {
 }
 
 module "rds-pg" {
-  source                           = "saturnops/postgresql-rds/aws"
+  source                           = "saturnops/rds-postgresql/aws"
   name                             = local.name
   db_name                          = "postgres"
   multi_az                         = "true"
