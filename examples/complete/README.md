@@ -21,7 +21,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_rds-pg"></a> [rds-pg](#module\_rds-pg) | saturnops/postgresql-rds/aws | n/a |
+| <a name="module_rds-pg"></a> [rds-pg](#module\_rds-pg) | saturnops/rds-postgresql/aws | n/a |
 
 ## Resources
 
