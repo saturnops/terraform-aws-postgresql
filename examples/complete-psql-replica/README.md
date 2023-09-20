@@ -24,7 +24,7 @@ This example will be very useful for users who are new to a module and want to q
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_kms"></a> [kms](#module\_kms) | terraform-aws-modules/kms/aws | n/a |
-| <a name="module_rds-pg"></a> [rds-pg](#module\_rds-pg) | ../.. | n/a |
+| <a name="module_rds-pg"></a> [rds-pg](#module\_rds-pg) | saturnops/rds-postgresql/aws | n/a |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | saturnops/vpc/aws | n/a |
 
 ## Resources
