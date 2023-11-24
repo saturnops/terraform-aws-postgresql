@@ -97,8 +97,7 @@ module "vpc" {
 }
 
 module "rds-pg" {
-  source = "../../"
-  #source                           = "saturnops/rds-postgresql/aws"
+  source                           = "saturnops/rds-postgresql/aws"
   name                             = local.name
   db_name                          = "postgres"
   multi_az                         = "true"
